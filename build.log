@@ -1,0 +1,66 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 31B done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.9-slim-bullseye
+#3 DONE 0.8s
+
+#4 [1/3] FROM docker.io/library/python:3.9-slim-bullseye@sha256:b1e212609b1167570f35cd62d3b9ec1565d9fd6a082119ee4d0b00355ca37033
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 473B done
+#5 DONE 0.0s
+
+#4 [1/3] FROM docker.io/library/python:3.9-slim-bullseye@sha256:b1e212609b1167570f35cd62d3b9ec1565d9fd6a082119ee4d0b00355ca37033
+#4 CACHED
+
+#6 [2/3] COPY . .
+#6 DONE 0.0s
+
+#7 [3/3] RUN pip install -r requirements.txt
+#7 2.247 Collecting Flask
+#7 2.622   Downloading flask-3.0.0-py3-none-any.whl (99 kB)
+#7 2.841      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.7/99.7 kB 429.5 kB/s eta 0:00:00
+#7 3.110 Collecting werkzeug
+#7 3.314   Downloading werkzeug-3.0.1-py3-none-any.whl (226 kB)
+#7 3.522      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 226.7/226.7 kB 1.1 MB/s eta 0:00:00
+#7 3.750 Collecting click>=8.1.3
+#7 3.867   Downloading click-8.1.7-py3-none-any.whl (97 kB)
+#7 3.935      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.9/97.9 kB 1.5 MB/s eta 0:00:00
+#7 4.135 Collecting blinker>=1.6.2
+#7 4.345   Downloading blinker-1.7.0-py3-none-any.whl (13 kB)
+#7 4.569 Collecting itsdangerous>=2.1.2
+#7 4.688   Downloading itsdangerous-2.1.2-py3-none-any.whl (15 kB)
+#7 4.996 Collecting importlib-metadata>=3.6.0
+#7 5.114   Downloading importlib_metadata-7.0.1-py3-none-any.whl (23 kB)
+#7 5.444 Collecting Jinja2>=3.1.2
+#7 5.725   Downloading Jinja2-3.1.3-py3-none-any.whl (133 kB)
+#7 5.787      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.2/133.2 kB 2.5 MB/s eta 0:00:00
+#7 6.125 Collecting MarkupSafe>=2.1.1
+#7 6.607   Downloading MarkupSafe-2.1.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+#7 7.021 Collecting zipp>=0.5
+#7 7.150   Downloading zipp-3.17.0-py3-none-any.whl (7.4 kB)
+#7 7.293 Installing collected packages: zipp, MarkupSafe, itsdangerous, click, blinker, werkzeug, Jinja2, importlib-metadata, Flask
+#7 7.721 Successfully installed Flask-3.0.0 Jinja2-3.1.3 MarkupSafe-2.1.3 blinker-1.7.0 click-8.1.7 importlib-metadata-7.0.1 itsdangerous-2.1.2 werkzeug-3.0.1 zipp-3.17.0
+#7 7.722 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#7 8.539 
+#7 8.539 [notice] A new release of pip is available: 23.0.1 -> 23.3.2
+#7 8.539 [notice] To update, run: pip install --upgrade pip
+#7 DONE 8.6s
+
+#8 exporting to image
+#8 exporting layers
+#8 exporting layers 0.2s done
+#8 writing image sha256:97a645bc52862c20aeeb51ddbd09d931d6549cafa5097c039e20b68873fe74ee done
+#8 naming to docker.io/library/assignment1 done
+#8 DONE 0.2s
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview
