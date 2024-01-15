@@ -26,6 +26,7 @@ The docker build command is used to build a Docker image from a set of instructi
 
  Logs have been further attached in build.log file
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 => Command:
 docker run -d -p 8000:8000 --name Assignment_1 -i assignment > build1.log 2>&1
@@ -35,3 +36,15 @@ The docker run command is used to create and run a Docker container based on a s
 
 => Logs/Output:
 f4cc2ccc8fe76f629a50103ebc557346d6141abb4a6b6f412670cee62014b0fe
+
+Logs:
+docker logs f4cc2ccc8fe7
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.17.0.2:8000
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
