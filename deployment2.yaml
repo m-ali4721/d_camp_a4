@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata: 
+  name: docker-deployment2
+  labels:
+    app: deployment2
+spec: 
+  replicas: 1
+  selector: 
+    matchLabels: 
+      app: pod-deployment2 
+  template:
+    metadata:
+      labels:
+        app: pod-deployment2 
+    spec: 
+      containers:
+      - name: container-deployment2 
+        image: makbar4721/assignment4 
+        ports:
+        - containerPort: 8007
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: docker-service2
+  labels:
+    app: deployment2
+spec:
+  selector:
+    app: pod-deployment2
+  ports:
+    - protocol: TCP
+      port: 8007
+      targetPort: 8000
+      nodePort: 30007
+  type: NodePort
